@@ -1,0 +1,68 @@
+<!-- member.jsp -->
+<%@page contentType="text/html; charset=UTF-8" %>
+<!doctype html>
+<html>
+<head>
+<title>회원가입</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body bgcolor="#FFFFCC" onLoad="regFrm.id.focus()">
+	<div align="center">
+		<br /><br />
+		<form name="regFrm" method="post" action="memberProc.jsp">
+			<table cellpadding="5">
+				<tr>
+					<td bgcolor="#FFFFCC">
+						<table border="1" cellspacing="0" cellpadding="2" width="600">
+							<tr bgcolor="#996600">
+								<td colspan="3"><font color="#FFFFFF"><b>회원 가입</b></font></td>
+							</tr>
+							<tr>
+								<td width="20%">아이디</td>
+								<td width="50%">
+									<input name="id" size="15"> 
+									
+								</td>
+								
+							</tr>
+							<tr>
+								<td>비밀번호</td>
+								<td><input type="password" name="pwd" size="15"></td>
+								
+							</tr>
+							<tr>
+								<td>비밀번호 확인</td>
+								<td><input type="password" name="repwd" size="15"></td>
+								
+							</tr>
+							<tr>
+								<td>이름</td>
+								<td><input name="name" size="15">
+								</td>
+								
+							</tr>
+							
+							<tr>
+								<td>프로필 이미지</td>
+							     <td><input type="file" name="filename" size="50" maxlength="50"></td>
+     							 
+							</tr>
+							<tr>
+								<td colspan="3" align="center">
+								   <input type="button" value="회원가입" onclick="inputCheck()">
+								    &nbsp; &nbsp; 
+								     <input type="button" value="로그인" onClick="javascript:location.href='login.jsp'">
+								 </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

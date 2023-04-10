@@ -1,0 +1,9 @@
+<%@page import="shop.ProductBean"%>
+<%@page import="shop.UtilMgr"%>
+<%@page contentType="text/html; charset=UTF-8"%>
+<jsp:useBean id="pMgr" class = "shop.ProductMgr"/>
+<%
+	int no =  UtilMgr.parseInt(request, "no");
+	ProductBean pbean = pMgr.getProduct(no);
+
+%>

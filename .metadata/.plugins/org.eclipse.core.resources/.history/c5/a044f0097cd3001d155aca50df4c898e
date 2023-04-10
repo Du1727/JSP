@@ -1,0 +1,4 @@
+<%@page contentType="text/html; charset=UTF-8"%>
+<%
+	// 전송 성공 및 실패 -> mailSend.jsp응답
+%>

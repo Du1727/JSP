@@ -1,0 +1,38 @@
+package shop;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class OrderMgr {
+	private DBConnectionMgr pool;
+	
+	public OrderMgr() {
+		pool = DBConnectionMgr.getInstance();
+	}
+	// Order Insert
+	//접수중(1),접수(2),입금확인(3),배송준비(4),배송중(5),완료(6)
+	public void insertOrder(OrderBean order) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		String sql = null;
+		try {
+			con = pool.getConnection();
+			sql = "insert tblOrder(id,productNo,quantity,date,state)"
+					+ "values(?,?,?,?,?)";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, order.getId());//누가
+			pstmt.setInt(2, order.getProductNo());//어떤 상품
+			pstmt.setInt(3, order.getQuantity());//몇개
+			pstmt.setString(4, UtilMgr.getDay());//언제
+			pstmt.setString(5, "1");//상태 -> 접수중
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(con, pstmt);
+		}
+	}
+	
+	
+	// Order List
+}

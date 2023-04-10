@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>JSP Poll</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFCC">
+<div align="center"><br/>
+<h2>투표 결과</h2>
+<table border="1" width="400">
+	<tr>
+		<td colspan="4"><b>Q : <%=plBean.getQuestion()%></b></td>
+	</tr>
+	<tr>
+		<td colspan="3"><b>총 투표자 :  <%=sumCnt%>명</b></td>
+		<td width="40"><b>count(%)</b></td>
+	</tr>
+	<%
+			for(int i=0;i<vlist.size();i++){
+				
+	%>		
+	<tr>
+		<td width="20" align="center"><%=i+1%></td>
+		<td width="120">
+
+		</td>
+		<td>
+			
+		</td>
+		<td width="40"></td>
+	</tr>
+	<%}//---for%>
+</table><br>
+<a href="javascript:window.close()">닫기</a>
+</div>
+</body>
+</html>

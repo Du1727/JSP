@@ -1,0 +1,26 @@
+package shop;
+
+import java.util.Hashtable;
+
+import javax.print.attribute.HashAttributeSet;
+
+//장바구니 기능 : DB연동 x, 세션을 이용할거야 ! 
+public class CartMgr {
+	
+	// key : 상품번호, value : 주문객체
+	private Hashtable<Integer, OrderBean> hCart = 
+			new Hashtable<Integer, OrderBean>();
+	
+	// Cart Delete
+	public void deleteCart(OrderBean order) {
+		hCart.remove(order.getProductNo());
+		
+	}
+	
+	// Cart Update
+	public Hashtable<Integer, OrderBean>getCartList() {
+		return hCart;
+		
+	}
+
+}

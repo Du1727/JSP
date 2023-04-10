@@ -1,0 +1,10 @@
+package mail;
+
+public class MailSend {
+
+	public boolean sendPwd(String id, String email) {
+		
+	}
+	
+	
+}

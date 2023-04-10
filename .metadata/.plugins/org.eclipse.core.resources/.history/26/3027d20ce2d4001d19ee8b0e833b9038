@@ -1,0 +1,6 @@
+<%@page contentType="text/html; charset=UTF-8"%>
+<jsp:useBean id="pMgr" class = "shop.ProductMgr"/>
+<%
+	String flag = request.getParameter("flag");
+	String msg = "오류가 발생하였습니다.";
+%>

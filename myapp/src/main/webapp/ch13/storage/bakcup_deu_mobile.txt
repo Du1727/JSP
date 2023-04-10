@@ -1,0 +1,182 @@
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp( MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title : "동의모바일",
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('모바일ID'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {
+                // Do something
+              },
+            ),
+          ],
+
+        ),
+
+
+
+        body: Column(
+              children: [
+
+                Container(
+                  width: 600,
+                  height: 200,
+                  child : Row(
+                    children:[
+                      Container(
+                        width: 300,
+                        height: 200,
+                        color: Colors.blue,
+                        child: Column(
+                          children: [
+                            Text('학사안내'),
+                            Image.asset("assets/images/1.PNG"),
+                          ],
+                        ),
+                        // decoration: BoxDecoration(
+                        //   image: DecorationImage(
+                        //     image:AssetImage('assets/1.PNG'),
+                        //   ),
+                        // ),
+                      ),
+                      Container(
+                        width: 300,
+                          height: 200,
+                          color: Colors.pink,
+                          child: Text('도서관홈페이지'),
+                      ),
+
+                    ],
+                  ),
+                ),
+
+                Container(
+                  width: 600,
+                  height: 80,
+                  child : Row(
+                    children:[
+                      Container(
+                        width: 300,
+                        height: 80,
+                        color: Colors.blue,
+                        child: Text('s7777777001'),
+                        alignment: Alignment.center,
+                      ),
+                      Container(
+                        width: 300,
+                        height: 80,
+                        color: Colors.pink,
+                        child: Text('ZL\n특별열람증'),
+                        alignment: Alignment.center,
+                      ),
+
+                    ],
+                  ),
+                ),
+
+                Container(
+                  width: 600,
+                  height: 100,
+                  color: Colors.white,
+                ),
+
+
+
+                Container(
+                        width: 600,
+                        height: 150,
+                        child : Row(
+                                  children:[
+                                      Container(
+                                        width: 200,
+                                        height: 150,
+                                        color: Colors.blue,
+                                        child: Text('학사안내'),
+                                      ),
+                                      Container(
+                                        width: 200,
+                                        height: 150,
+                                        color: Colors.pink,
+                                        child: Text('도서관홈페이지'),
+                                      ),
+                                      Container(
+                                        width: 200,
+                                        height: 150,
+                                        color: Colors.black,
+                                        child: Text('공결확인(QR)'),
+                                      ),
+                                   ],
+                        ),
+                     ),
+
+
+                      Container(
+                        width: 600,
+                        height: 150,
+                        child : Row(
+                             children:[
+                            Container(
+                              width: 200,
+                              height: 150,
+                              color: Colors.red,
+                              child: Text('기숙사'),
+
+                            ),
+                            Container(
+                              width: 200,
+                              height: 150,
+                              color: Colors.yellow,
+                              child: Text('식당'),
+                            ),
+                            Container(
+                              width: 200,
+                              height: 150,
+                              color: Colors.purple,
+                              child: Text('건물출입(QR)'),
+                            ),
+                          ],
+                        ),
+                      ),
+            ],
+        ),
+
+
+        bottomNavigationBar: BottomNavigationBar( //BottomNavigationBar : 화면 이동 네비게이션
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(Icons.phone), label: "모바일ID"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.food_bank), label: "D-Food"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.taxi_alert), label: "D-Pay"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.chair), label: "좌석배정"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.taxi_alert), label: "환경설정"),
+          ],
+        ),
+
+      ),
+
+
+    );
+  }
+}
+
+

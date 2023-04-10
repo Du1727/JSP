@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jst.jsp.ui.internal.preferences.ui.JSPTemplatePreferencePage$JSPEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="60"/>
+		<item key="DIALOG_Y_ORIGIN" value="66"/>
+		<item key="DIALOG_WIDTH" value="610"/>
+		<item key="DIALOG_HEIGHT" value="434"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="inputCheck"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="inputCheck"/>
+			<item value="MultipartRequest"/>
+			<item value="filename"/>
+			<item value="loginPMember"/>
+			<item value="login"/>
+			<item value="로그인"/>
+			<item value="order"/>
+			<item value="javasc"/>
+			<item value="java"/>
+			<item value="getItem"/>
+			<item value="deleteall"/>
+			<item value="all"/>
+			<item value="delete"/>
+			<item value="multi"/>
+			<item value="filesize"/>
+		</list>
+		<list key="replacehistory">
+			<item value="request"/>
+			<item value="/"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="776"/>
+		<item key="DIALOG_Y_ORIGIN" value="480"/>
+		<item key="DIALOG_WIDTH" value="314"/>
+		<item key="DIALOG_HEIGHT" value="568"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

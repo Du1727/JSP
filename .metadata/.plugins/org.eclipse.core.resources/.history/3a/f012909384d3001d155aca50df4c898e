@@ -1,0 +1,12 @@
+package mail;
+
+public class OrderBean {
+
+	private int no; 
+	private int productNo;
+	private int quantity;
+	private String date;
+	private String state;
+	private String id;
+	 
+}

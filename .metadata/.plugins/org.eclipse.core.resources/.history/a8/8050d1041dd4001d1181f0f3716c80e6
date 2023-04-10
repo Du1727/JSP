@@ -1,0 +1,10 @@
+package shop;
+
+import java.util.Hashtable;
+
+//장바구니 기능 : DB연동 x, 세션을 이용할거야 ! 
+public class CartMgr {
+	private Hashtable<Integer, OrderBean> hCart = 
+			new Hashtable<Integer, OrderBean>();
+
+}

@@ -1,0 +1,11 @@
+<%@page contentType="text/html; charset=UTF-8"%>
+<jsp:useBean id="cMgr" scope="session" class=shop.CartMgr"/>
+<jsp:useBean id="order" class=shop.OrderBean"/>
+<jsp:setProperty property="" name="order"/>
+
+<%
+	String id = (String)session.getAttribute("idKey");
+	if(id == null){
+		response.sendRedirect("login.jsp");
+	}
+%>

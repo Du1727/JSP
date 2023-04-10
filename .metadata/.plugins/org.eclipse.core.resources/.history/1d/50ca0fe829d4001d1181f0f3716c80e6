@@ -1,0 +1,9 @@
+package shop;
+
+public class OrderMgr {
+	private DBConnectionMgr pool;
+	
+	public OrderMgr() {
+		pool = DBConnectionMgr.getInstance();
+	}
+}
